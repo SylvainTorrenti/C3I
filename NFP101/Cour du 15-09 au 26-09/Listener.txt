@@ -1,0 +1,27 @@
+
+CL-USER 1 > (defun fac (n) (if (eq n 0) 1 (* n (fac (- n 1)))))
+FAC
+
+CL-USER 2 > (fac 5)
+120
+
+CL-USER 3 > (fac 2)
+2
+
+CL-USER 4 > (defun lnpe (n) (if (eq 0 n) nil (cons n (lnpe (- n 1)))))
+LNPE
+
+CL-USER 5 > (lnpe 4)
+
+Error: Arithmetic error in > of ((4 3 2 1)): Arguments must be real numbers.
+  1 (continue) Return a value to use.
+  2 (abort) Return to level 0.
+  3 Return to top loop level 0.
+
+Type :b for backtrace or :c <option number> to proceed.
+Type :bug-form "<subject>" for a bug report template or :? for other options.
+
+CL-USER 6 : 1 > (lnpe 4)
+(4 3 2 1)
+
+CL-USER 7 : 1 > 
