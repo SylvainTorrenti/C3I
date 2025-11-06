@@ -1,0 +1,23 @@
+scenario créé compte :
+demande nom, mail, code utilisateur et mdp
+valide et systeme enregsitre
+affiche message de creation
+
+scenario authentifiquation:
+Saisi de code et mdp
+systéme le connecte
+
+scenario demande operation basique
+fait demande et fournit les deux facteur et l'operateur
+renvoi un resultat
+historise (quand qui quoi)
+
+scenario operation chaine
+client annonce qu'il commence operation chaine
+systéme affiche 0
+utilisateur dournit 1er maillon (facteur et operateur)
+utilisateur annonce fin operationrenvoie dernier maillon
+
+scenario lancé facturation
+admin donne 2 date et renseifne tout les client qui ont effectuer operation dans cette tranche
+edite les factures

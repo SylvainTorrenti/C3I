@@ -1,0 +1,11 @@
+
+CL-USER 1 > (defun fib (n)
+              (if (<= n 1)
+                  1
+                  (+ (fib (- n 1)) (fib (- n 2)))))
+FIB
+
+CL-USER 2 > (fib 5)
+8
+
+CL-USER 3 > 
